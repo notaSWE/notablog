@@ -67,4 +67,64 @@ After a bit of `jq` inspection of `my_collection.json` I found that the preferre
 
 ![Pagination Issue Query](/notablog/docs/assets/2023_02_19_question03.JPG "Pagination Issue Query")
 
-Now that I had a list of thumbnails called `thumbnails` it was trivial to iterate through them and perform a `wget` operation on each.
+```
+# Make request to API and retrieve all pages of results
+page = 1
+thumbnails = []
+while True:
+    response = requests.get(base_url + endpoint, headers=headers, params={'page': page})
+    response_data = response.json()
+    # Extract album thumbnails from each release
+    for release in response_data['releases']:
+        # Check if release has an image and add it to the list of thumbnails
+        if release['basic_information']['cover_image']:
+            thumbnails.append(release['basic_information']['cover_image'])
+    # Check if there are more pages of results
+    if 'next' in response.links:
+        page += 1
+    else:
+        break
+```
+
+The above code resolved the pagination issue, and now I could retrieve all of my collection (79 records at the time of writing).  Now that I had a list of thumbnails called `thumbnails` it was trivial to iterate through them and perform a `wget` operation on each.
+
+![Wget Files Query](/notablog/docs/assets/2023_02_19_question04.JPG "Wget Files Query")
+
+```
+import os
+import subprocess
+
+# Set the URL and file name for the file you want to download
+url = 'https://example.com/myfile.txt'
+filename = 'myfile.txt'
+
+# Set the directory where you want to check for the file
+directory = '/path/to/directory'
+
+# Check if the file exists in the directory
+file_path = os.path.join(directory, filename)
+if os.path.isfile(file_path):
+    print(f"{filename} already exists in {directory}")
+else:
+    # Download the file using wget
+    print(f"Downloading {filename} from {url} to {directory}")
+    subprocess.run(['wget', '-P', directory, url])
+```
+
+With a bit of Frankenstein code with the above snippet and what we saw previously, I was able to come up with this:
+
+```
+for thumbnail in thumbnails:
+    filename = thumbnail.split("/")[-1]
+    file_path = f"{directory}{filename}"
+    if os.path.isfile(file_path):
+        print(f"{filename} already exists in {directory}")
+    else:
+        # Download the file using wget
+        print(f"Downloading {filename} from {thumbnail} to {directory}")
+        subprocess.run(['wget', '-P', directory, thumbnail])
+```
+
+This resulted in a collection of 78 photos in my `thumbs/` directory.  Interestingly, this was one less than my total collection... I believe a single record was missing the required `release['basic_information']['cover_image']`) and thus no thumbnail was downloaded.  
+
+Now was the time to arrange everything in a nice grid using some semblance of html/javascript/css.  My skills in front end development are nonexistent, so...
