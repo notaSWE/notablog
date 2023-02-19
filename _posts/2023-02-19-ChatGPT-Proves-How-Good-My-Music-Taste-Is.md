@@ -65,6 +65,6 @@ for release in response.json()['releases']:
 
 After a bit of `jq` inspection of `my_collection.json` I found that the preferred thumbnail was actually `release['basic_information']['cover_image']` which was a simple enough edit.  If you read on you will notice that not all of ChatGPT's results are direct answers, but they get you *close enough*.  Which brings me to an issue with the above code; pagination.
 
-![Pagination Issue Query](/notablog/docs/assets/2023_02_19_question02.JPG "Pagination Issue Query")
+![Pagination Issue Query](/notablog/docs/assets/2023_02_19_question03.JPG "Pagination Issue Query")
 
 Now that I had a list of thumbnails called `thumbnails` it was trivial to iterate through them and perform a `wget` operation on each.
