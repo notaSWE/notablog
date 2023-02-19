@@ -176,3 +176,8 @@ In order to prevent this post from getting too long, I had quite a bit of back a
 
 ![Maintain Image Size Query](/notablog/docs/assets/2023_02_19_question10.JPG "Maintain Image Size Query")
 
+After modifying my `index.html` file I placed it in my project directory and launched a simple python web server: `python3 -m http.server`
+
+I could then load `127.0.0.1:8000/index.html` in my browser, greeted with my incredible record collection in its full glory:
+
+![Layout GIF](/notablog/docs/assets/2023_02_19_index_gif.gif "Layout GIF")
