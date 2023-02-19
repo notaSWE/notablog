@@ -181,3 +181,23 @@ After modifying my `index.html` file I placed it in my project directory and lau
 I could then load `127.0.0.1:8000/index.html` in my browser, greeted with my incredible record collection in its full glory:
 
 ![Layout GIF](/notablog/docs/assets/2023_02_19_index_gif.gif "Layout GIF")
+
+Now came the part in my project to share the above with the world.  Thankfully I had a barren wasteland of an AWS account at the ready...
+
+## Enter AWS
+
+Without going into insane detail on the infrastructure, I knew that this could be something like:
+
+1. A Lambda function that would:
+    * Grab my collection data using the Discogs API
+    * Read an S3 bucket subdirectory called `thumbs/` and check for missing thumbnails
+    * Download missing thumbnails to `/tmp/` and then upload them to the S3 bucket `thumbs/`
+2. The S3 bucket mentioned above would host `index.html`
+3. The trigger for the lambda function would a CloudWatch Event running on a cron schedule
+4. I wanted to share the above buildout with the world so it all needed to be in terraform
+
+That said, I used ChatGPT for all of it...and it works!  Thanks for reading :sunglasses:
+
+[Check it out on my GitHub](https://github.com/notaSWE/wallofrecords)
+
+[Live demo here, for now](https://album-photos-gvqelm.s3.amazonaws.com/index.html)
