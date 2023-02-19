@@ -196,7 +196,7 @@ Without going into insane detail on the infrastructure, I knew that this could b
 3. The trigger for the lambda function would a CloudWatch Event running on a cron schedule
 4. I wanted to share the above buildout with the world so it all needed to be in terraform
 
-That said, I used ChatGPT for all of it...and it works!  Thanks for reading :sunglasses:
+That said, I used ChatGPT for all of it...and it works!  Thanks for reading 😎
 
 [Check it out on my GitHub](https://github.com/notaSWE/wallofrecords)
 
