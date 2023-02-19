@@ -18,7 +18,7 @@ Long story short, the data just kind of exists.  I thought to myself, wouldn't i
 
 Full disclosure, I am pretty bad at reading API documentation most of the time.  ChatGPT basically lets me skip that hastle.  So the first thing I looked up was:
 
-![Discogs to JSON Query](notablog/docs/assets/2023_02_19_question01.JPG "Discogs to JSON Query")
+![Discogs to JSON Query](/notablog/docs/assets/2023_02_19_question01.JPG "Discogs to JSON Query")
 
 ```
 import requests
@@ -47,3 +47,5 @@ response = requests.get(base_url + endpoint, headers=headers)
 with open('my_collection.json', 'w') as f:
     json.dump(response.json(), f)
 ```
+
+I simply saved that locally as `get_collection.py`, created an API key in my Discogs account, and hardcoded my credentials without second thought.  I then executed the script and output the json to a file: `python3 get_collection.py > my_collection.json`
