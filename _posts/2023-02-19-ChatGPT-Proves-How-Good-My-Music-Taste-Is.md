@@ -18,7 +18,7 @@ Long story short, the data just kind of exists.  I thought to myself, wouldn't i
 
 Full disclosure, I am pretty bad at reading API documentation most of the time.  ChatGPT basically lets me skip that hastle.  So the first thing I looked up was:
 
-![Discogs to JSON Query](notablog/docs/assets/2023-02-19/question01.JPG "Discogs to JSON Query")
+![Discogs to JSON Query](notablog/docs/assets/2023_02_19/question01.JPG "Discogs to JSON Query")
 
 ```
 import requests
