@@ -8,13 +8,13 @@ What you see above is the result of entirely too many hours interacting with Cha
 
 You might (not) be asking yourself, how'd you accomplish such a feat?  Simple, really.  I have entirely too much free time.  But it does involve an interesting tech stack, so if you're into that kind of thing, read on!
 
-### Enter Discogs
+## Enter Discogs
 
 Discogs is basically the Untappd of the vinyl world.  Meaning, you can add a record to your "collection" and share a link with your friends to compare records, trade records, etc.
 
 Long story short, the data just kind of exists.  I thought to myself, wouldn't it be cool if I could query that data somehow, and maybe display it in an interesting way?
 
-### Enter ChatGPT
+## Enter ChatGPT
 
 Full disclosure, I am pretty bad at reading API documentation most of the time.  ChatGPT basically lets me skip that hastle.  So the first thing I looked up was:
 
@@ -128,3 +128,51 @@ for thumbnail in thumbnails:
 This resulted in a collection of 78 photos in my `thumbs/` directory.  Interestingly, this was one less than my total collection... I believe a single record was missing the required `release['basic_information']['cover_image']`) and thus no thumbnail was downloaded.  
 
 Now was the time to arrange everything in a nice grid using some semblance of html/javascript/css.  My skills in front end development are nonexistent, so...
+
+## Enter More ChatGPT
+
+![Front End HTML/CSS Query](/notablog/docs/assets/2023_02_19_question05.JPG "Front End HTML/CSS Query")
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Grid Example</title>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+  <?php
+  $dir = 'path/to/images/';
+  $files = scandir($dir);
+  foreach ($files as $file) {
+    if (is_file($dir . $file)) {
+      echo '<img src="' . $dir . $file . '">';
+    }
+  }
+  ?>
+  </div>
+</body>
+</html>
+```
+
+Oh no, PHP.  If there's anything I like worse than JavaScript, it's PHP.
+
+![No PHP, Please](/notablog/docs/assets/2023_02_19_question06.JPG "No PHP, Please")
+
+In order to prevent this post from getting too long, I had quite a bit of back and forth with ChatGPT from here on out in terms of the front end design.  Here are a few of my questions before we cut to the final layout:
+
+![Dynamic Layout Query](/notablog/docs/assets/2023_02_19_question07.JPG "Dynamic Layout Query")
+
+![Aspect Ratio Query](/notablog/docs/assets/2023_02_19_question08.JPG "Aspect Ratio Query")
+
+![On Mouseover Query](/notablog/docs/assets/2023_02_19_question09.JPG "On Mouseover Query")
+
+![Maintain Image Size Query](/notablog/docs/assets/2023_02_19_question10.JPG "Maintain Image Size Query")
+
