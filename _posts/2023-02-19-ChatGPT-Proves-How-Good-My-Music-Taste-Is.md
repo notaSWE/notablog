@@ -48,4 +48,23 @@ with open('my_collection.json', 'w') as f:
     json.dump(response.json(), f)
 ```
 
-I simply saved that locally as `get_collection.py`, created an API key in my Discogs account, and hardcoded my credentials without second thought.  I then executed the script and output the json to a file: `python3 get_collection.py > my_collection.json`
+I simply saved that locally as `get_collection.py`, created an API key in my Discogs account, and hardcoded my credentials without a care in the world.  I then executed the script and verified the output to the newly created `my_collection.json` file.  So far, so good!
+
+I needed to parse out the actual URLs of the albums I own so I could then save them and arrange them in a nice grid for the world to see.  That said, ChatGPT is rather verbose in its output so I will just be pasting in the relevant code snippets from here on out.
+
+![Parse Thumbnails Query](/notablog/docs/assets/2023_02_19_question02.JPG "Parse Thumbnails Query")
+
+```
+# Extract album thumbnails from each release
+thumbnails = []
+for release in response.json()['releases']:
+    # Check if release has an image and add it to the list of thumbnails
+    if release['basic_information']['thumb']:
+        thumbnails.append(release['basic_information']['thumb'])
+```
+
+After a bit of `jq` inspection of `my_collection.json` I found that the preferred thumbnail was actually `release['basic_information']['cover_image']` which was a simple enough edit.  If you read on you will notice that not all of ChatGPT's results are direct answers, but they get you *close enough*.  Which brings me to an issue with the above code; pagination.
+
+![Pagination Issue Query](/notablog/docs/assets/2023_02_19_question02.JPG "Pagination Issue Query")
+
+Now that I had a list of thumbnails called `thumbnails` it was trivial to iterate through them and perform a `wget` operation on each.
