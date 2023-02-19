@@ -1,10 +1,5 @@
 ---
-title: Welcome to my blog
+title: Blog posts about side projects involving code
 ---
 
-##### This
-#### is
-### a
-## work
-# in
-progress
+More posts coming soon.  Probably.  Maybe.
