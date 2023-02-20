@@ -20,7 +20,7 @@ Full disclosure, I am pretty bad at reading API documentation most of the time. 
 
 ![Discogs to JSON Query](/notablog/docs/assets/2023_02_19_question01.JPG "Discogs to JSON Query")
 
-```
+```python
 import requests
 import json
 
