@@ -212,6 +212,8 @@ That said, I used ChatGPT for all of it...and it works!
 
 [Live demo here, for now](https://album-photos-gvqelm.s3.amazonaws.com/index.html)
 
+Note: I realized mouseover/hover is kind of weird no mobile so I just modified the above to pick a random album and pulse, repeating infinitely.
+
 ## In Conclusion
 
 If you've used ChatGPT for any code-related endeavors you most likely arrived at a similar conclusion: ChatGPT is an imperfect tool that makes finding the answer a much easier task.  Just a few months ago I'd be searching similar terms using Google and perusing the first 5-10 results; now I just type the question into a prompt and do a bit of followup when required.  
