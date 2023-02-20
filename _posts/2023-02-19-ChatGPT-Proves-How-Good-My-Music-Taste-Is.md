@@ -133,7 +133,7 @@ Now was the time to arrange everything in a nice grid using some semblance of ht
 
 ![Front End HTML/CSS Query](/notablog/docs/assets/2023_02_19_question05.JPG "Front End HTML/CSS Query")
 
-```html
+```php
 <!DOCTYPE html>
 <html>
 <head>
