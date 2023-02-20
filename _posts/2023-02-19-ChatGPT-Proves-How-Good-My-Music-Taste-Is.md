@@ -2,7 +2,9 @@
 title: "ChatGPT Proves How Good My Music Taste Is"
 date: 2023-02-19
 ---
-![Wall of Records Demo](/notablog/docs/assets/2023_02_19_albums01.JPG "Wall of Records Demo")
+Like you, I've also been anxiously awaiting the Sade x Meshuggah tour.  But I just don't think it's gonna happen.
+
+![Wall of Records Demo](/notablog/docs/assets/2023_02_19_albums07.JPG "Wall of Records Demo")
 
 What you see above is the result of entirely too many hours interacting with ChatGPT to display my nostalgia-based vinyl collection.  
 
@@ -166,6 +168,8 @@ Oh no, PHP.  If there's anything I like less than JavaScript, it's PHP.
 
 ![No PHP, Please](/notablog/docs/assets/2023_02_19_question06b.JPG "No PHP, Please")
 
+* code response
+
 In order to prevent this post from getting too long, I had quite a bit of back and forth with ChatGPT from here on out in terms of the front end design.  Here are a few of my questions before we cut to the final layout:
 
 ![Dynamic Layout Query](/notablog/docs/assets/2023_02_19_question07b.JPG "Dynamic Layout Query")
@@ -204,8 +208,14 @@ Without going into insane detail on the infrastructure, I knew that this could b
 3. The trigger for the lambda function would be a CloudWatch Event running on a cron schedule
 4. All of the above but in terraform because why not
 
-That said, I used ChatGPT for all of it...and it works!  Thanks for reading 😎
-
-[Check it out on my GitHub](https://github.com/notaSWE/wallofrecords)
+That said, I used ChatGPT for all of it...and it works!
 
 [Live demo here, for now](https://album-photos-gvqelm.s3.amazonaws.com/index.html)
+
+## In Conclusion
+
+If you've used ChatGPT for any code-related endeavors you most likely arrived at a similar conclusion: ChatGPT is an imperfect tool that makes finding the answer a much easier task.  Just a few months ago I'd be searching similar terms using Google and perusing the first 5-10 results; now I just type the question into a prompt and do a bit of followup when required.  
+
+Thank you for reading 😎
+
+[Check out the code on GitHub](https://github.com/notaSWE/wallofrecords)
