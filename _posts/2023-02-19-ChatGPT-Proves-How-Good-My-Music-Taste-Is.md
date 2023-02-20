@@ -210,7 +210,7 @@ Without going into insane detail on the infrastructure, I knew that this could b
 
 That said, I used ChatGPT for all of it...and it works!
 
-[Live demo here, for now](https://album-photos-gvqelm.s3.amazonaws.com/index.html)
+[Live demo here, for now](https://album-photos-1o92pn.s3.amazonaws.com/index.html)
 
 Note: I realized mouseover/hover is kind of weird no mobile so I just modified the above to pick a random album and pulse, repeating infinitely.
 
