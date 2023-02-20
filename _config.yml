@@ -4,6 +4,5 @@ plugins:
 author: [notaswe]
 title: [notablog]
 description: [by notaswe]
-show_downloads: [false]
 github:
   repository_url: https://github.com/notaSWE/
