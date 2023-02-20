@@ -170,11 +170,19 @@ In order to prevent this post from getting too long, I had quite a bit of back a
 
 ![Dynamic Layout Query](/notablog/docs/assets/2023_02_19_question07b.JPG "Dynamic Layout Query")
 
+* code response
+
 ![Aspect Ratio Query](/notablog/docs/assets/2023_02_19_question08b.JPG "Aspect Ratio Query")
+
+* code response
 
 ![On Mouseover Query](/notablog/docs/assets/2023_02_19_question09b.JPG "On Mouseover Query")
 
+* code response
+
 ![Maintain Image Size Query](/notablog/docs/assets/2023_02_19_question10b.JPG "Maintain Image Size Query")
+
+* code response
 
 After modifying my `index.html` file I placed it in my project directory and launched a simple python web server: `python3 -m http.server`
 
