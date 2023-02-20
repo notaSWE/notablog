@@ -18,7 +18,7 @@ Long story short, the data just kind of exists.  I thought to myself, wouldn't i
 
 Full disclosure, I am pretty bad at reading API documentation most of the time.  ChatGPT basically lets me skip that hastle.  So the first thing I looked up was:
 
-![Discogs to JSON Query](/notablog/docs/assets/2023_02_19_question01.JPG "Discogs to JSON Query")
+![Discogs to JSON Query](/notablog/docs/assets/2023_02_19_question01b.JPG "Discogs to JSON Query")
 
 ```python
 import requests
@@ -52,7 +52,7 @@ I simply saved that locally as `get_collection.py`, created an API key in my Dis
 
 I needed to parse out the actual URLs of the albums I own so I could then save them and arrange them in a nice grid for the world to see.  That said, ChatGPT is rather verbose in its output so I will just be pasting in the relevant code snippets from here on out.
 
-![Parse Thumbnails Query](/notablog/docs/assets/2023_02_19_question02.JPG "Parse Thumbnails Query")
+![Parse Thumbnails Query](/notablog/docs/assets/2023_02_19_question02b.JPG "Parse Thumbnails Query")
 
 ```python
 # Extract album thumbnails from each release
@@ -65,7 +65,7 @@ for release in response.json()['releases']:
 
 After a bit of `jq` inspection of `my_collection.json` I found that the preferred thumbnail was actually `release['basic_information']['cover_image']` which was a simple enough edit.  If you read on you will notice that not all of ChatGPT's results are direct answers, but they get you *close enough*.  Which brings me to an issue with the above code; pagination.
 
-![Pagination Issue Query](/notablog/docs/assets/2023_02_19_question03.JPG "Pagination Issue Query")
+![Pagination Issue Query](/notablog/docs/assets/2023_02_19_question03b.JPG "Pagination Issue Query")
 
 ```python
 # Make request to API and retrieve all pages of results
@@ -88,7 +88,7 @@ while True:
 
 The above code resolved the pagination issue, and now I could retrieve all of my collection (79 records at the time of writing).  Now that I had a list of thumbnails called `thumbnails` it was trivial to iterate through them and perform a `wget` operation on each.
 
-![Wget Files Query](/notablog/docs/assets/2023_02_19_question04.JPG "Wget Files Query")
+![Wget Files Query](/notablog/docs/assets/2023_02_19_question04b.JPG "Wget Files Query")
 
 ```python
 import os
@@ -131,7 +131,7 @@ Now was the time to arrange everything in a nice grid using some semblance of ht
 
 ## Enter More ChatGPT
 
-![Front End HTML/CSS Query](/notablog/docs/assets/2023_02_19_question05.JPG "Front End HTML/CSS Query")
+![Front End HTML/CSS Query](/notablog/docs/assets/2023_02_19_question05b.JPG "Front End HTML/CSS Query")
 
 ```php
 <!DOCTYPE html>
@@ -162,19 +162,19 @@ Now was the time to arrange everything in a nice grid using some semblance of ht
 </html>
 ```
 
-Oh no, PHP.  If there's anything I like worse than JavaScript, it's PHP.
+Oh no, PHP.  If there's anything I like less than JavaScript, it's PHP.
 
-![No PHP, Please](/notablog/docs/assets/2023_02_19_question06.JPG "No PHP, Please")
+![No PHP, Please](/notablog/docs/assets/2023_02_19_question06b.JPG "No PHP, Please")
 
 In order to prevent this post from getting too long, I had quite a bit of back and forth with ChatGPT from here on out in terms of the front end design.  Here are a few of my questions before we cut to the final layout:
 
-![Dynamic Layout Query](/notablog/docs/assets/2023_02_19_question07.JPG "Dynamic Layout Query")
+![Dynamic Layout Query](/notablog/docs/assets/2023_02_19_question07b.JPG "Dynamic Layout Query")
 
-![Aspect Ratio Query](/notablog/docs/assets/2023_02_19_question08.JPG "Aspect Ratio Query")
+![Aspect Ratio Query](/notablog/docs/assets/2023_02_19_question08b.JPG "Aspect Ratio Query")
 
-![On Mouseover Query](/notablog/docs/assets/2023_02_19_question09.JPG "On Mouseover Query")
+![On Mouseover Query](/notablog/docs/assets/2023_02_19_question09b.JPG "On Mouseover Query")
 
-![Maintain Image Size Query](/notablog/docs/assets/2023_02_19_question10.JPG "Maintain Image Size Query")
+![Maintain Image Size Query](/notablog/docs/assets/2023_02_19_question10b.JPG "Maintain Image Size Query")
 
 After modifying my `index.html` file I placed it in my project directory and launched a simple python web server: `python3 -m http.server`
 
