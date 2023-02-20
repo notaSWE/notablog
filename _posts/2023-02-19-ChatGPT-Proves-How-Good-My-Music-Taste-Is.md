@@ -63,7 +63,7 @@ for release in response.json()['releases']:
         thumbnails.append(release['basic_information']['thumb'])
 ```
 
-After a bit of `jq` inspection of `my_collection.json` I found that the preferred thumbnail was actually `release['basic_information']['cover_image']` which was a simple enough edit.  If you read on you will notice that not all of ChatGPT's results are direct answers, but they get you *close enough*.  Which brings me to an issue with the above code; pagination.
+After a bit of `jq` inspection of `my_collection.json` I found that the preferred thumbnail was actually `release['basic_information']['cover_image']` which was a simple enough edit.  If you read on you will notice that not all of ChatGPT's results are direct answers, but they get you *close enough*.  Which brings me to an issue with the above code; pagination (typo to follow).
 
 ![Pagination Issue Query](/notablog/docs/assets/2023_02_19_question03b.JPG "Pagination Issue Query")
 
@@ -125,7 +125,7 @@ for thumbnail in thumbnails:
         subprocess.run(['wget', '-P', directory, thumbnail])
 ```
 
-This resulted in a collection of 78 photos in my `thumbs/` directory.  Interestingly, this was one less than my total collection... I believe a single record was missing the required `release['basic_information']['cover_image']`) and thus no thumbnail was downloaded.  
+This resulted in a collection of 78 photos in my `thumbs/` directory.  Interestingly, this was one less than my total collection... I believe a single record was missing the required `release['basic_information']['cover_image']` and thus no thumbnail was downloaded.  
 
 Now was the time to arrange everything in a nice grid using some semblance of html/javascript/css.  My skills in front end development are nonexistent, so...
 
@@ -190,7 +190,7 @@ I could then load `127.0.0.1:8000/index.html` in my browser, greeted with my inc
 
 ![Layout GIF](/notablog/docs/assets/2023_02_19_index_gif.gif "Layout GIF")
 
-Now came the part in my project to share the above with the world.  Thankfully I had a barren wasteland of an AWS account at the ready...
+Now came the part in my project to share the above with the world.  Thankfully I had a barren wasteland of an cloud account at the ready...
 
 ## Enter AWS
 
@@ -201,8 +201,8 @@ Without going into insane detail on the infrastructure, I knew that this could b
     * Read an S3 bucket subdirectory called `thumbs/` and check for missing thumbnails
     * Download missing thumbnails to `/tmp/` and then upload them to the S3 bucket `thumbs/`
 2. The S3 bucket mentioned above would host `index.html`
-3. The trigger for the lambda function would a CloudWatch Event running on a cron schedule
-4. I wanted to share the above buildout with the world so it all needed to be in terraform
+3. The trigger for the lambda function would be a CloudWatch Event running on a cron schedule
+4. All of the above but in terraform because why not
 
 That said, I used ChatGPT for all of it...and it works!  Thanks for reading 😎
 
