@@ -18,8 +18,7 @@ Long story short, the data just kind of exists.  I thought to myself, wouldn't i
 
 Full disclosure, I am pretty bad at reading API documentation most of the time.  ChatGPT basically lets me skip that hastle.  So the first thing I looked up was:
 
-## Prompt
-* How can I use the discogs API to output my record collection to json?
+![Discogs to JSON Query](/notablog/docs/assets/2023_02_19_question01.JPG "Discogs to JSON Query")
 
 ```python
 import requests
