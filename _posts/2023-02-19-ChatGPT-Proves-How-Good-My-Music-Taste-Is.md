@@ -54,7 +54,7 @@ I needed to parse out the actual URLs of the albums I own so I could then save t
 
 ![Parse Thumbnails Query](/notablog/docs/assets/2023_02_19_question02.JPG "Parse Thumbnails Query")
 
-```
+```python
 # Extract album thumbnails from each release
 thumbnails = []
 for release in response.json()['releases']:
@@ -67,7 +67,7 @@ After a bit of `jq` inspection of `my_collection.json` I found that the preferre
 
 ![Pagination Issue Query](/notablog/docs/assets/2023_02_19_question03.JPG "Pagination Issue Query")
 
-```
+```python
 # Make request to API and retrieve all pages of results
 page = 1
 thumbnails = []
@@ -90,7 +90,7 @@ The above code resolved the pagination issue, and now I could retrieve all of my
 
 ![Wget Files Query](/notablog/docs/assets/2023_02_19_question04.JPG "Wget Files Query")
 
-```
+```python
 import os
 import subprocess
 
@@ -113,7 +113,7 @@ else:
 
 With a bit of Frankenstein code with the above snippet and what we saw previously, I was able to come up with this:
 
-```
+```python
 for thumbnail in thumbnails:
     filename = thumbnail.split("/")[-1]
     file_path = f"{directory}{filename}"
@@ -133,7 +133,7 @@ Now was the time to arrange everything in a nice grid using some semblance of ht
 
 ![Front End HTML/CSS Query](/notablog/docs/assets/2023_02_19_question05.JPG "Front End HTML/CSS Query")
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
