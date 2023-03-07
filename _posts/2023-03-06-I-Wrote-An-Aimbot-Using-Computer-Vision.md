@@ -17,7 +17,7 @@ Before we jump into the details about how I used computer vision, specifically O
 * Score decrements if the player misses a target
 * Once the countdown finishes, score is calculated and displayed to player
 
-Here is a vide of the game being played with a countdown of five seconds; the sound effects should help to drive it home.
+Here is a video of the game being played with a countdown of five seconds; the sound effects should help to drive it home.
 
 <video width="960" height="540" controls>
   <source src="https://notaswe-blog-posts.s3.amazonaws.com/2023_03_06_aimbot01.mp4" type="video/mp4">
