@@ -150,8 +150,6 @@ This function is a little wild, so let's walk through it.  First, `screen_copy` 
 2. The array is rotated 90 degrees
 3. The array is flipped upside down
 4. The array is flipped horizontally
-
-
     ```python
     def detect_target(self):
         screen_copy = pygame.surfarray.array3d(self.display_surface)
@@ -196,5 +194,7 @@ Unfortunately `aimbot.py` doesn't just work its magic by existing.  I had to mak
   <source src="https://notaswe-blog-posts.s3.amazonaws.com/2023_03_06_aimbot02.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+
+[aimtrainer-aimbot code here](https://github.com/notaSWE/aimtrainer-aimbot)
 
 Thank you for reading!
