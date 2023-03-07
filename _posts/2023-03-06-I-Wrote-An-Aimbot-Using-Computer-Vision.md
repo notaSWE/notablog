@@ -19,10 +19,12 @@ Before we jump into the details about how I used computer vision, specifically O
 
 Here is a video of the game being played with a countdown of five seconds; the sound effects should help to drive it home.
 
-<video width="960" height="540" controls>
-  <source src="https://notaswe-blog-posts.s3.amazonaws.com/2023_03_06_aimbot01.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<div style="max-width: 960px;">
+  <video style="width: 100%; height: auto;" controls>
+    <source src="https://notaswe-blog-posts.s3.amazonaws.com/2023_03_06_aimbot01.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
 
 It should become immediately obvious that:
 * I got incredibly lucky with the spawn of the first target
@@ -190,10 +192,12 @@ This function is a little wild, so let's walk through it.  First, `screen_copy` 
 
 Unfortunately `aimbot.py` doesn't just work its magic by existing;  I had to make a few modifications to `main.py` and `countdown.py` to allow the functionality of the `Aimbot` class.  I'll let the results speak for themselves:
 
-<video width="960" height="540" controls>
-  <source src="https://notaswe-blog-posts.s3.amazonaws.com/2023_03_06_aimbot02.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<div style="max-width: 960px;">
+  <video style="width: 100%; height: auto;" controls>
+    <source src="https://notaswe-blog-posts.s3.amazonaws.com/2023_03_06_aimbot02.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
 
 [aimtrainer-aimbot code here](https://github.com/notaSWE/aimtrainer-aimbot)
 
