@@ -151,6 +151,7 @@ This function is a little wild, so let's walk through it.  First, `screen_copy` 
 3. The array is flipped upside down
 4. The array is flipped horizontally
 
+
     ```python
     def detect_target(self):
         screen_copy = pygame.surfarray.array3d(self.display_surface)
