@@ -188,7 +188,7 @@ This function is a little wild, so let's walk through it.  First, `screen_copy` 
 
 # Final Steps
 
-Unfortunately `aimbot.py` doesn't just work its magic by existing.  I had to make a few modifications to `main.py` and `countdown.py` to allow the functionality of the `Aimbot` class, but I would say the results speak for themselves:
+Unfortunately `aimbot.py` doesn't just work its magic by existing;  I had to make a few modifications to `main.py` and `countdown.py` to allow the functionality of the `Aimbot` class.  I'll let the results speak for themselves:
 
 <video width="960" height="540" controls>
   <source src="https://notaswe-blog-posts.s3.amazonaws.com/2023_03_06_aimbot02.mp4" type="video/mp4">
