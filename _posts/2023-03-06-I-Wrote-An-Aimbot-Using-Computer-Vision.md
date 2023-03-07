@@ -94,7 +94,7 @@ class Aimbot():
 
 * Games run in units called frames, often-times fixed at 60 or 120 per second
 * Regardless, certain things need to happen every frame
-* In this case, we need the Aimbot class to have an update function
+* In this case we need the Aimbot class to have an update function
 * This function will check if a target has been identified via the `target_identified` boolean
 * If `target_identified` is `False`, the yet-to-be-discussed `detect_target()` function will run
 * If `target_identified` is `True` and `contours` is not `None`, outlines will be drawn around the coordinates `detectedX` and `detectedY` 
