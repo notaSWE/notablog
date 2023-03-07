@@ -25,7 +25,7 @@ Here is a video of the game being played with a countdown of five seconds; the s
 </video>
 
 It should become immediately obvious that:
-* I got incredibly lucky with the spawn of the first target and
+* I got incredibly lucky with the spawn of the first target
 * I am not very fast at aiming with a mouse
 
 # Enter OpenCV
@@ -92,7 +92,7 @@ class Aimbot():
 # Update Function
 ### If you are familiar with Pygame and/or general game development, you will likely be familiar with what an `update()` function might do.  If not, a quick explanation:
 
-* Games work by generating frames, often-times fixed at 60 or 120 per second
+* Games run in units called frames, often-times fixed at 60 or 120 per second
 * Regardless, certain things need to happen every frame
 * In this case, we need the Aimbot class to have an update function
 * This function will check if a target has been identified via the `target_identified` boolean
