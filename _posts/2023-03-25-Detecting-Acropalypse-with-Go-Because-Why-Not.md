@@ -10,7 +10,7 @@ From what I can tell [Simon Aarons](https://twitter.com/ItsSimonTime/status/1636
 
 [![Simon Aarons Tweet](/notablog/docs/assets/2023_03_27_tweet.JPG "Informative Tweet")](https://twitter.com/ItsSimonTime/status/1636857478263750656)
 
-As part of my research I came across [intobyte's](https://github.com/infobyte/CVE-2023-21036) tool to detect vulnerable images using Python.  As normal, well-adjusted individuals like myself tend to do, I began testing it to see if I could extend functionality.  Rather than using a bash for loop I created a new Python file called `acropalypse_dir.py` and modified it so I could scan an entire directory of relevant `.jpg` and `.png` images:
+As part of my research I came across [infobyte's](https://github.com/infobyte/CVE-2023-21036) tool to detect vulnerable images using Python.  As normal, well-adjusted individuals like myself tend to do, I began testing it to see if I could extend functionality.  Rather than using a bash for loop I created a new Python file called `acropalypse_dir.py` and modified it so I could scan an entire directory of relevant `.jpg` and `.png` images:
 
 ```python
 images_to_check = []
