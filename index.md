@@ -2,7 +2,7 @@
 layout: default
 title: Blog posts about side projects involving code
 ---
-# [Detecting Acropalypse with Go Because Why Not](https://notaswe.github.io/notablog/2023/03/06/Detecting-Acropalypse-with-Go-Because-Why-Not.html)
+# [Detecting Acropalypse with Go Because Why Not](https://notaswe.github.io/notablog/2023/03/25/Detecting-Acropalypse-with-Go-Because-Why-Not.html)
 
 Posted on 25 Mar 2023
 
