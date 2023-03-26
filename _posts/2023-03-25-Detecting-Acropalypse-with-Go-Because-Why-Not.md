@@ -158,14 +158,14 @@ I could then iterate through the list of `confirmedPngFiles` and pass them into 
 # Performance
 After some additional transcription of the logic in infobyte's `acropalypse_detection.py` I was at a point where both their version and my version could recursively search for .png and .jpg files in a directory taken in as a command-line argument.  That said I thought it would be fun to test performance between Go and Python.  I added timers to each script and ran them; results below:
 
-## Go
+### Go
 ```bash
 $ go run gocropalypse.go /mnt/e/notaswe
 Found 197 vulnerable images out of a scanned total of 5958.
 Total time to execute: 66.41605 seconds
 ```
 
-## Python
+### Python
 ```bash
 $ python3 acropalypse_dir.py /mnt/e/notaswe
 Found 197 vulnerable images out of a scanned total of 5958.
