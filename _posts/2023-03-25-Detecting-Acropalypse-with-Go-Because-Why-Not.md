@@ -176,10 +176,10 @@ Total time to execute: 69.364916 seconds
 
 Well I guess it's official, folks.
 
+![Bye bye](/notablog/docs/assets/2023_03_27_conclusion.gif "Deleting Python")
+
 # Actual Conclusion
 
 Okay, jokes aside I did actually leverage this to find vulnerable .png files on a Pixel device.  That said I did not determine anything to be concerning enough to run the sanitization script in the infobyte tool.  I will say, though, that service providers should take this seriously.  
 
 If you are in the business of hosting user-generated content, up to and including hosting images uploaded from mobile devices, this is a big issue.  In my testing I found false positives which I have [reported](https://github.com/infobyte/CVE-2023-21036/issues/1) to infobyte; more work can be done to iron these out, and a scalable sanitization event likely needs to occur at ths service provider level.
-
-![Bye bye](/notablog/docs/assets/2023_03_27_conclusion.gif "Deleting Python")
