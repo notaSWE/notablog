@@ -2,7 +2,7 @@
 title: "Detecting Acropalypse with Go Because Why Not"
 date: 2023-03-25
 ---
-From what I can tell [Simon Aarons](https://twitter.com/ItsSimonTime/status/1636857478263750656) and [David Buchanan](https://www.da.vidbuchanan.co.uk/blog/exploiting-acropalypse.html) did the heavy lifting on this.  But I never let re-inventing the wheel keep me from learning something new.
+From what I can tell [Simon Aarons](https://twitter.com/ItsSimonTime/status/1636857478263750656) and [David Buchanan](https://www.da.vidbuchanan.co.uk/blog/exploiting-acropalypse.html) did the heavy lifting on this.  But I never let reinventing the wheel keep me from learning something new.
 
 # Acropalypse
 
@@ -175,5 +175,11 @@ Total time to execute: 69.364916 seconds
 # Conclusion
 
 Well I guess it's official, folks.
+
+# Actual Conclusion
+
+Okay, jokes aside I did actually leverage this to find vulnerable .png files on a Pixel device.  That said I did not determine anything to be concerning enough to run the sanitization script in the infobyte tool.  I will say, though, that service providers should take this seriously.  
+
+If you are in the business of hosting user-generated content, up to and including hosting images uploaded from mobile devices, this is a big issue.  In my testing I found false positives which I have [reported](https://github.com/infobyte/CVE-2023-21036/issues/1) to infobyte; more work can be done to iron these out, and a scalable sanitization event likely needs to occur at ths service provider level.
 
 ![Bye bye](/notablog/docs/assets/2023_03_27_conclusion.gif "Deleting Python")
