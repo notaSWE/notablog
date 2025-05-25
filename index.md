@@ -2,6 +2,10 @@
 layout: default
 title: Blog posts about side projects involving code
 ---
+# [Solitaire But Make It Synthwave](https://notaswe.github.io/notablog/2025/05/25/Solitaire-But-Make-It-Synthwave.html)
+
+Posted on 25 May 2025
+
 # [Detecting Acropalypse with Go Because Why Not](https://notaswe.github.io/notablog/2023/03/25/Detecting-Acropalypse-with-Go-Because-Why-Not.html)
 
 Posted on 25 Mar 2023
