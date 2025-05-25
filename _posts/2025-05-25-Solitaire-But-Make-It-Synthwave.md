@@ -62,7 +62,7 @@ I wanted to continue adding features to Synthwave Solitaire but at the end of th
 
 # Credits
 
-I am by no means an artist and thankfully was able to leverage graphics and music provided for free from the following individuals:
+I was thankfully able to leverage graphics and music provided for free from the following individuals:
 
 - Cards - [Neon Orbis](https://neonorbis.itch.io/playing-cards)
 - Skybox - [Dogmatic](https://assetstore.unity.com/packages/2d/textures-materials/sky/free-skyboxes-sci-fi-fantasy-184932)
