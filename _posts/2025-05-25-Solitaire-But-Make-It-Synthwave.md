@@ -57,3 +57,14 @@ An interesting dilemma with 2D games is the sorting layer itself.  Although Soli
 # Final Thoughts
 
 I wanted to continue adding features to Synthwave Solitaire but at the end of the day, I am happy with its current state.  You can actually beat the game and get a nice victory animation to boot.  As much fun as I have had with the development of this project, I am ready for my next endeavor in game development.  Until then, thank you for reading!
+
+# Credits
+
+I am by no means an artist and thankfully was able to leverage graphics and music provided for free from the following individuals:
+
+- Cards - https://neonorbis.itch.io/playing-cards
+- Skybox - https://assetstore.unity.com/packages/2d/textures-materials/sky/free-skyboxes-sci-fi-fantasy-184932
+  - Slightly modified coloration of a Skybox from this pack
+- Soundtrack - Zach, my talented composer/producer friend
+- UI - https://penzilla.itch.io/basic-gui-bundle
+  - "Graphics created by Penzilla Design" including non-edited and slightly edited (re-deal) icons
