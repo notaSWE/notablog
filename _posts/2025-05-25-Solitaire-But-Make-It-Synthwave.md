@@ -52,6 +52,8 @@ I will not go into the specific implementation details of the above but it resul
 
 In Synthwave Solitaire, I technically blend 3D with 2D as the background itself is a 3D Scene.  Being able to load one scene "within" another scene was what enabled this.  There are multiple cameras in use as well.
 
+As for the background scene, the heavy lifting is being done by two separate shaders.  I had to create a sphere in Blender with significantly higher subdivision surfaces than the generic Unity sphere.  This was exported from Blender and opened in Unity, with the sun ray shader added to it.  The mountains were a low poly terrain, again with a shader added to it (albeit a grid shader this time).  I spent some time experimenting with procedural terrain generation but ultimately gave up on that effort.  I imagine I will revisit it again in the future because it is a really interesting concept - but tricky to implement from scratch.
+
 An interesting dilemma with 2D games is the sorting layer itself.  Although Solitaire is a 2D game, the cards have a pseudo z-axis.  When you stack the cards, the lowest child card is actually rendered closer to the camera.  For the initial development of Synthwave solitaire I kept incrementing the z-axis position of my Card instances; this ended up being a mistake that I later resolved by incrementing the sorting layer every time I interact with a card.  If this is not done properly, there will be instances where cards do not stack properly graphically.
 
 # Final Thoughts
