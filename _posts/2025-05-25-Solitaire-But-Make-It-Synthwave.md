@@ -62,9 +62,9 @@ I wanted to continue adding features to Synthwave Solitaire but at the end of th
 
 I am by no means an artist and thankfully was able to leverage graphics and music provided for free from the following individuals:
 
-- Cards - https://neonorbis.itch.io/playing-cards
-- Skybox - https://assetstore.unity.com/packages/2d/textures-materials/sky/free-skyboxes-sci-fi-fantasy-184932
+- Cards - [Neon Orbis](https://neonorbis.itch.io/playing-cards)
+- Skybox - [Dogmatic](https://assetstore.unity.com/packages/2d/textures-materials/sky/free-skyboxes-sci-fi-fantasy-184932)
   - Slightly modified coloration of a Skybox from this pack
 - Soundtrack - Zach, my talented composer/producer friend
-- UI - https://penzilla.itch.io/basic-gui-bundle
-  - "Graphics created by Penzilla Design" including non-edited and slightly edited (re-deal) icons
+- UI - [Penzilla](https://penzilla.itch.io/basic-gui-bundle)
+  - Graphics created by Penzilla Design including non-edited and slightly edited (re-deal) icons
