@@ -43,8 +43,8 @@ The vast majority of development time was speant actually implementing the rules
 2. Kings are the only parent card that can move to an empty board column.
 3. Aces are the only cards that can go into a blank Ace Zone.
 4. Ace Zones behave differently than board columns.  They start as if they were numerically a "one" value and allow stacking only if the next card is valued one higher _and_ is of the same suit.
-5. You can move "substacks" of cards if the receiving "parent" adheres to the above rules
-6. The game is won when all Ace Zones are full
+5. You can move "substacks" of cards if the receiving "parent" adheres to the above rules.
+6. The game is won when all Ace Zones are full.
 
 I will not go into the specific implementation details of the above but it resulted in multiple different methods and a ridiculously large Update() method.  Knowing what I know now, I would try to modularize the code a bit more if I were to start this endeavor by scratch.
 
