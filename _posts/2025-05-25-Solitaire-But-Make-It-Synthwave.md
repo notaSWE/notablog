@@ -7,7 +7,7 @@ date: 2025-05-25
 
 Late last year I opened up Solitaire in Windows 10 for nostalgia purposes and was horrified to find that it is ad-supported.  Yes, that Solitaire, dating back to the 90s, has ads now.  I will refrain from additional opinion on that topic but it did make me think to myself: "Can I make my own version of this game?"
 
-Fast forward an embarassing number of months later and I'm proud to say that yes, I was able to recreate the classic game in Unity with a fresh coat of paint and soundtrack to boot.
+Fast forward an embarassing number of months and I'm proud to say that yes, I was able to recreate the classic game in Unity with a fresh coat of paint and soundtrack to boot.
 
 [Play Synthwave Solitaire on itch.io!](https://notaswe.itch.io/synthwave-solitaire)
 
