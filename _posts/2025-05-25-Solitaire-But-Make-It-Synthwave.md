@@ -67,4 +67,4 @@ I am by no means an artist and thankfully was able to leverage graphics and musi
   - Slightly modified coloration of a Skybox from this pack
 - Soundtrack - Zach, my talented composer/producer friend
 - UI - [Penzilla](https://penzilla.itch.io/basic-gui-bundle)
-  - Graphics created by Penzilla Design including non-edited and slightly edited (re-deal) icons
+  - Graphics (UI Buttons) created by Penzilla Design; re-deal icon slightly modified from original
