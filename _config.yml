@@ -6,4 +6,6 @@ title: notablog
 description: [by notaswe]
 github:
   repository_url: https://github.com/notaSWE/
+url: "https://notaswe.github.io"
+baseurl: "/notablog"
 future: true
