@@ -24,9 +24,11 @@ Like many endeavors past, I had no earthly idea what I was doing when I decided 
 
 ![Cube Boi](/notablog/docs/assets/2026_01_20_blender_armature.PNG "Armature")
 
-I decided to keep things simple and start with a walk animation which basically involves setting a few key poses in an Action sheet.  This might be the most simplified walk cycle of all time but hey, it works:
+I decided to keep things simple and start with a walk animation which basically involves setting a few key poses in an Action sheet.  This might be the most simplified walk cycle of all time but hey, it works!
 
 ![Cube Boi](/notablog/docs/assets/2026_01_20_walk.gif "Walk Cycle")
+
+A quick idle animation and jump cycle and it was on to the next phase.
 
 # Engine Selection
 
