@@ -62,7 +62,7 @@ My justification for this seemingly ridiculous process was simple: after impleme
 
 # Unity
 
-I started out in Unity because I felt the most confident in my ability to quickly implement game mechanics.  I understand the game object -> script that enables said object to do stuff paradigm quite well and tend to enjoy it.  There were a few gotchas here and there, mostly with the UI.  But overall the process was smooth and I finished the entire gameplay implementation pretty quickly.
+I started out in Unity because I felt the most confident in my ability to quickly implement game mechanics.  I understand the game object -> script-that-enables-said-object-to-do-stuff paradigm quite well and tend to enjoy it.  There were a few gotchas here and there, mostly with the UI.  But overall the process was smooth and I finished the entire gameplay implementation pretty quickly.
 
 ![Unity Project]({{ site.baseurl }}/docs/assets/2026_01_20_editor_unity.PNG "Unity Editor")
 
