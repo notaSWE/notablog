@@ -34,7 +34,7 @@ A quick idle animation and jump cycle and it was on to the next phase.
 
 At this point it was time to fire up a game engine - but which one?  On one hand, I spent a decent amount of time in Unity developing my previous game.  But on the other hand, a simple game is a good excuse to learn something new.  So I started leaning toward Unreal.  But I enjoyed learning a bit of Godot a couple years back so maybe it was worth revisiting...enter analysis paralysis.
 
-Rather than overanalyze the process any further I decided to do what anyone with entirely too much time on their hands would do: make the same game in all three!
+Rather than overanalyze the process any further, I decided to do what anyone with entirely too much time on their hands would do: make the same game in all three!
 
 # The Game Mechanics
 
