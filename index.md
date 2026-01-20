@@ -2,7 +2,7 @@
 layout: default
 title: Blog posts about side projects involving code
 ---
-# [A Game So Nice I Made It Thrice]({{ site.baseurl }}/2026/01/19/A-Game-So-Nice-I-Made-It-Thrice.html)
+# [A Game So Nice I Made It Thrice]({{ site.baseurl }}/2026/01/19/A-Game-So-Nice-I-Made-it-Thrice.html)
 
 Posted on 19 Jan 2026
 
