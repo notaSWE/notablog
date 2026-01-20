@@ -1,6 +1,6 @@
 ---
 title: "A Game So Nice I Made It Thrice"
-date: 2026-01-20
+date: 2026-01-20 00:00:00 -0000
 ---
 
 ![Cube Boi](/notablog/docs/assets/2026_01_20_cubeboi.jpg "Cube Boi Model")
