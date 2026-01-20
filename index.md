@@ -2,6 +2,10 @@
 layout: default
 title: Blog posts about side projects involving code
 ---
+# [A Game So Nice I Made It Thrice](https://notaswe.github.io/notablog/2026/01/20/A-Game-So-Nice-I-Made-It-Thrice.html)
+
+Posted on 20 Jan 2025
+
 # [Solitaire But Make It Synthwave](https://notaswe.github.io/notablog/2025/05/25/Solitaire-But-Make-It-Synthwave.html)
 
 Posted on 25 May 2025
